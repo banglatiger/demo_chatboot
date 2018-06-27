@@ -4,7 +4,7 @@
 from chatterbot import ChatBot
 from chatterbot.trainers import ChatterBotCorpusTrainer
 
-train=True
+train=False
 
 chatbot = ChatBot(
     "Experto_cruceros",
