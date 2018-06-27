@@ -4,7 +4,7 @@
 from chatterbot import ChatBot
 from chatterbot.trainers import ChatterBotCorpusTrainer
 
-train=False
+train=True
 
 chatbot = ChatBot(
     "Experto_cruceros",
@@ -47,7 +47,7 @@ DEFAULT_SESSION_ID = chatbot.default_conversation_id
 
 if train:
     chatbot.set_trainer(ChatterBotCorpusTrainer)
-    chatbot.train("./corpus.yml")
+    chatbot.train("./corpus_oxxo.yml")
 
 
 while True:
